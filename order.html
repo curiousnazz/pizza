@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<link rel="stylesheet" href="styles.css">
+<script src="js.js" defer></script>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giuseppe’s Pizzeria</title>
+</head>
+<body>
+    <!--Nav S-->
+        <nav class="nav">
+            <!--Button S-->
+                <a href="#" class="button">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </a>
+            <!--Button E-->
+            <div class="logo">
+                <a href="home.html"><img src="giuseppes.png" alt="Giuseppe’s Pizzeria Logo"></a>
+            </div>
+            <div class="links">
+                <ul>
+                    <li><a href="home.html">home</a></li>
+                    <li><a href="menu.html">menu</a></li>
+                    <li><a href="order.html#order" class="c" style="color:white;">order</a></li>
+                    <li><a href="home.html#hours">hours</a></li>
+                    <li><a href="home.html#contact">contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    <!--Nav E-->
+    <div class="content"><!--Content S-->
+        <br/ id="order" style="margin-top:10%;">
+        <h1>Order Form</h1>
+        <div class="form">
+            <form action="submit" required>
+                <input type="firstname" placeholder="First Name:" required>
+                <input type="lastname" placeholder="Last Name:" required>
+                <input type="address" placeholder="Address:" required>
+                <input type="state" placeholder="State:" required>
+                <input type="city" placeholder="City:" required>
+                <input type="number" placeholder="Phone Number:" required>
+                <br/>
+                <div class="food">
+                    <div class="antipasti">
+                        <h1>Antipasti</h1>
+                        <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+                        <label for="vehicle1">Salumi e Formaggi</label>
+                        <br>
+                        <br>
+                        <br>
+                        <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+                        <label for="vehicle2">Giardeniera</label>
+                        <br>
+                        <br>
+                        <br>
+                        <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+                        <label for="vehicle3">Calamari Fritti</label>
+                        <br>
+                        <br>
+                        <br>
+                        <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+                        <label for="vehicle3">Bruschetta</label>
+                        <br>
+                        <br>
+                        <br>
+                        <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+                        <label for="vehicle3">Foccacia</label>
+                        <br>
+                        <br>
+                        <br>
+                        <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+                        <label for="vehicle3">Arancini</label>
+                        <br>
+                        <br>
+                        <br>
+                    </div>
+                    <div class="s_pizza">
+                        <h1>Specialty Pizza</h1>
+                        <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+                        <label for="vehicle1">Rustica</label>
+                        <br>
+                        <br>
+                        <br>
+                        <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+                        <label for="vehicle2">Salame Piccante</label>
+                        <br>
+                        <br>
+                        <br>
+                        <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+                        <label for="vehicle3">Salsiccia</label>
+                        <br>
+                        <br>
+                        <br>
+                        <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+                        <label for="vehicle3">Quattro Stagioni</label>
+                        <br>
+                        <br>
+                        <br>
+                        <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+                        <label for="vehicle3">Puttanesca</label>
+                        <br>
+                        <br>
+                        <br>
+                        <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+                        <label for="vehicle3">Prosciutto</label>
+                        <br>
+                        <br>
+                        <br>
+                        <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+                        <label for="vehicle1">Primavera</label>
+                        <br>
+                        <br>
+                        <br>
+                        <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+                        <label for="vehicle2">Margherita</label>
+                        <br>
+                        <br>
+                        <br>
+                        <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+                        <label for="vehicle3">Monte Bianco</label>
+                        <br>
+                        <br>
+                        <br>
+                        <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+                        <label for="vehicle3">Diavola</label>
+                        <br>
+                        <br>
+                        <br>
+                        <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+                        <label for="vehicle3">Canadian</label>
+                        <br>
+                        <br>
+                        <br>
+                    </div>
+                    <div style="color:white;">
+                        <input type="radio" id="age1" name="age" value="30">
+                        <label for="age1">Small $13</label><br>
+                        <input type="radio" id="age2" name="age" value="60">
+                        <label for="age2">Medium $15</label><br>  
+                        <input type="radio" id="age3" name="age" value="100">
+                        <label for="age3">Large $18</label><br><br>
+                    </div>
+                    <div style="color:white;margin-bottom: 5%;">
+                        <input type="radio" id="age1" name="age" value="30">
+                        <label for="age1">Make Your Own Pizza</label><br>
+                    </div>
+                    <div style="color:white;">
+                        <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+                        <label for="vehicle1">Pepperoni</label>
+                        <br>
+                        <br>
+                        <br>
+                        <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+                        <label for="vehicle2">Mushroom</label>
+                        <br>
+                        <br>
+                        <br>
+                        <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+                        <label for="vehicle3">Extra cheese</label>
+                        <br>
+                        <br>
+                        <br>
+                        <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+                        <label for="vehicle3">Sausage</label>
+                        <br>
+                        <br>
+                        <br>
+                        <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+                        <label for="vehicle3">Onion</label>
+                        <br>
+                        <br>
+                        <br>
+                        <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+                        <label for="vehicle3">Fresh basil</label>
+                        <br>
+                        <br>
+                        <br>
+                        <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+                        <label for="vehicle3">Black olives</label>
+                        <br>
+                        <br>
+                        <br>
+                        <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+                        <label for="vehicle3">Green pepper</label>
+                        <br>
+                        <br>
+                        <br>
+                        <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+                        <label for="vehicle3">Fresh garlic</label>
+                        <br>
+                        <br>
+                        <br>
+                        <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+                        <label for="vehicle3">Tomato</label>
+                        <br>
+                        <br>
+                        <br>
+                    </div>
+                </div>
+
+
+
+
+
+
+
+
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+        <!--Footer S-->
+            <footer class="footer">
+                <hr>
+                <br/>
+                Giuseppe’s Pizzeria Corporate Offices
+                <br />
+                2501 Browncroft Blvd.
+                <br />
+                Rochester, NY 14625
+                <br />
+                585-670-1000
+                <br />
+                <a href = "mailto: abc@example.com">Giuseppe's Email (Contact Human Resources)</a>
+            </footer>       
+        <!--Footer E-->
+    </div><!--Content E-->
+</body>
+</html>

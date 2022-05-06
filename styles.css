@@ -1,0 +1,434 @@
+@charset "UFT-8";
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap');
+*{
+    margin:0;
+    padding:0;
+}
+body{
+    overflow-x: hidden;
+    background-image: url('pizza2.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    scroll-behavior: smooth;
+}
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border:solid transparent;
+    background-color: rgba(0, 0, 0, 0.643);
+    padding-top: 30px;
+}
+.logo img{
+    width:150px;
+    margin-left: 10%;
+    margin-right: 50px;
+}
+.links ul{
+    display:flex;
+    margin-right: 100px;
+}
+.links li{
+    list-style: none;
+    margin:2rem;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 5px;
+}
+.links a{
+    text-decoration: none;
+    text-transform: capitalize;
+    color:white;
+}
+.links a:hover{
+    color:red;
+}
+.button{
+    position: absolute;
+    top:4.8rem;
+    right:2rem;
+    display: none;
+    flex-direction: column;
+    justify-content:space-between;
+    height: 17px;
+    width:21px;
+}
+.button .bar{
+    height: 2px;
+    width:100%;
+    background-color: white;
+    border-radius: 10px;
+}
+.c{
+    border-bottom: solid white;
+    border-width: 2px;
+}
+@media(max-width:855px){
+    .button{
+        display: flex;
+    }
+    .links{
+        display: none;
+        width:100%;
+        margin-top: 21px;
+    }
+    *{
+        margin:0;
+        padding:0;
+    }
+    .nav{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .links ul{
+        margin:0;
+        flex-direction: column;
+        width:100%;
+    }
+    .links li{
+        text-align: center;
+        padding:1rem;
+        font-weight: 900;
+    }
+    .links a{
+        color:whitesmoke;
+    }
+    .links a:hover{
+        color:red;
+    }
+    .links.active{
+        display: flex;
+    }
+}
+.footer{
+    color:white;
+    text-align: center;
+    margin-top: 17%;
+    font-family: 'Titillium Web', sans-serif;
+}
+.footer a{
+    color:white;
+    text-decoration: none;
+}
+.footer a:hover{
+    color:red;
+}
+/*----------Home Styles S----------*/
+.content{
+    background-color: rgba(0, 0, 0, 0.643);
+    width:100%;
+}
+.title{
+    font-family: 'Bebas Neue', cursive;
+    letter-spacing: 5px;
+    font-size: 75px;
+}
+.text1{
+    color:white;
+    width:75%;
+    border:solid transparent;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 12.5%;
+    font-family: 'Josefin Sans', sans-serif;
+    word-spacing: 5px;
+    font-size: 21px;
+    font-weight: 400;
+}
+.learn_more_button{
+    border:solid transparent;
+    background-color:rgba(0, 0, 0, 0.568);
+    color:white;
+    padding:1rem;
+    cursor: pointer;
+    letter-spacing: 3px;
+    font-size: 15px;
+    text-transform: uppercase;
+}
+.learn_more_button:hover{
+    color:black;
+    background-color:rgba(255, 255, 255, 0.568);
+}
+.text2{
+    color:white;
+    width:75%;
+    border:solid transparent;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 15%;
+    font-family: 'Josefin Sans', sans-serif;
+    word-spacing: 5px;
+    font-size: 21px;
+    font-weight: 400;
+}
+.text3{
+    color:white;
+    width:75%;
+    border:solid transparent;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 5%;
+    font-family: 'Josefin Sans', sans-serif;
+    word-spacing: 5px;
+    font-size: 21px;
+    font-weight: 400;
+}
+.sections{
+    border:solid transparent;
+    width:100%;
+    display: inline-flex;
+    margin-top: 10%;
+}
+.sections .hours{
+    width: 50%;
+    border:transparent solid;
+    height: 500px;
+    color:white;
+}
+.sections .locations{
+    width: 49%;
+    border:transparent solid;
+    height: 500px;
+    color:white;
+}
+.hours h1{
+    text-align: center;
+    font-family: 'Bebas Neue', cursive;
+    color:red;
+    letter-spacing: 5px;
+    font-size: 50px;
+}
+.locations h1{
+    text-align: center;
+    font-family: 'Bebas Neue', cursive;
+    color:red;
+    letter-spacing: 5px;
+    font-size: 50px;
+}
+.table_hours td{
+    padding-bottom:2rem;padding-top: 2rem;
+    padding-bottom:2rem;padding-top: 2rem;
+    padding-right: 1rem;padding-left: 1rem;
+    font-size: 21px;
+    font-family: 'Titillium Web', sans-serif;
+}
+.table_hours{
+    margin-left:auto;
+    margin-right: auto;
+    justify-content: space-between;
+}
+.table_locations td{
+    font-size: 21px;
+    padding-bottom:2rem;padding-top: 2rem;
+    padding-right: .5rem;padding-left: .5rem;
+    font-family: 'Titillium Web', sans-serif;
+}
+.table_locations{
+    margin-left:auto;
+    margin-right: auto;
+    margin-top: 10%;
+}
+@media(max-width:950px){
+    .sections{
+        display: block;
+    }
+    .hours{
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 7%;
+    }
+    .locations{
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 7%;
+    }
+    .hours td{
+        font-size: 17px;
+    }
+    .locations td{
+        font-size: 17px;
+    }
+}
+.wesbitelinks{
+    border:solid transparent;
+    margin-top: 5%;
+    margin-top: 20%;
+}
+.wesbitelinks h1{
+    text-align: center;
+    font-family: 'Bebas Neue', cursive;
+    color:red;
+    letter-spacing: 5px;
+    font-size: 50px;
+}
+.wesbitelinks a{
+    text-align: center;
+    margin-top: 3%;
+    display: block;
+    color:white;
+    text-decoration: none;
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 20px;
+}
+.wesbitelinks a:hover{
+    color:red;
+}
+@media (max-width:750px){
+    .wesbitelinks{
+        margin-top: 200px;
+    }
+}
+/*----------Home Styles E----------*/
+/*----------Menu Styles S---------*/
+.menu h1{
+    text-align: center;
+    font-family: 'Bebas Neue', cursive;
+    color:white;
+    letter-spacing: 5px;
+    font-size: 75px;
+    margin-top: 1%;
+}
+h2{
+    font-family: 'Bebas Neue', cursive;
+    color:rgb(255, 0, 0);
+    letter-spacing: 5px;
+    font-size: 30px;
+    margin-top: 5%;
+    margin-left: 3%;
+    border-bottom: solid green;
+    width:75px;
+    margin-bottom: 50px;
+}
+.antipasti{
+    border:solid transparent;
+    width:90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.antipasti td{   
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 21px;
+    color:white;
+    text-transform: capitalize;
+    padding: 3%;
+    width:50%;
+    border-bottom: solid rgba(255, 255, 255, 0.353);
+    border-width: 1px;
+}
+h3{
+    font-family: 'Bebas Neue', cursive;
+    letter-spacing: 5px;
+    font-size: 50px;
+    color:white;
+    text-align: center;
+    margin-top:10%;
+}
+.menu_tex1{
+    color:white;
+    width:80%;
+    border:solid transparent;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'Josefin Sans', sans-serif;
+    word-spacing: 5px;
+    font-size: 21px;
+    text-align: center;
+    font-weight: 400;
+}
+.others{
+    border:solid transparent;
+    width:90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.others td{   
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 21px;
+    color:white;
+    text-transform: capitalize;
+    padding: 3%;
+    width:50%;
+    border-bottom: solid rgba(255, 255, 255, 0.353);
+    border-width: 1px;
+}
+.menu_text2{
+    color:white;
+    width:80%;
+    border:solid transparent;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'Josefin Sans', sans-serif;
+    word-spacing: 5px;
+    font-size: 21px;
+    text-align: center;
+    font-weight: 400;
+}
+/*----------Menu Styles E---------*/
+/*----------Order Styles S---------*/
+.form{
+    width:100%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    padding-top: 5%;
+}
+.form input{
+    background-color: whitesmoke;
+    border-color: transparent;
+    width:33.3%;
+    padding:1rem;
+    margin:5px;
+}.form button{
+    border-color: transparent;
+    background-color: rgba(0, 0, 0, 0.767);
+    border-radius: 10px;
+    padding-left: 2.5%;
+    padding-right: 2.5%;
+    color:white;
+    font-size: 25px;
+    font-family: 'Josefin Sans', sans-serif;
+    cursor: pointer;
+    margin:2rem;
+}
+.form button:hover{
+    background-color: rgba(255, 255, 255, 0.767);
+    color:black;
+}
+h1{
+    text-align: center;
+    font-family: 'Bebas Neue', cursive;
+    color:white;
+    letter-spacing: 5px;
+    font-size: 75px;
+}
+.antipasti{
+    border:solid transparent;
+    width:80%;
+    color:white;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+.antipasti h1{
+    font-size: 60px;
+    color:rgb(2, 133, 13);
+    margin-top: 10%;
+    margin-bottom: 5%;
+}
+.s_pizza{
+    border:solid transparent;
+    width:80%;
+    color:white;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+.s_pizza h1{
+    font-size: 60px;
+    color:rgb(145, 0, 0);
+    margin-top: 10%;
+    margin-bottom: 5%;
+}
+/*----------Order Styles E---------*/
